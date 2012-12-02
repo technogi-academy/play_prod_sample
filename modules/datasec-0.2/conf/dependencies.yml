@@ -1,0 +1,4 @@
+self: play -> datasec 0.2
+
+require:
+    - play

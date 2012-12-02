@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>copeems_prod</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.playframework.playclipse.playNature</nature>
+	</natures>
+	<linkedResources><link><name>datasec-0.2</name><type>2</type><location>/Users/dev/test/copeems_prod/modules/datasec-0.2/app</location></link>
+<link><name>conf/datasec-0.2</name><type>2</type><location>/Users/dev/test/copeems_prod/modules/datasec-0.2/conf</location></link>
+<link><name>crud</name><type>2</type><location>/usr/local/play-1.2.5/modules/crud/app</location></link>
+<link><name>conf/crud</name><type>2</type><location>/usr/local/play-1.2.5/modules/crud/conf</location></link>
+<link><name>public/crud</name><type>2</type><location>/usr/local/play-1.2.5/modules/crud/public</location></link>
+</linkedResources>
+</projectDescription>

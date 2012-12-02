@@ -1,0 +1,43 @@
+Proyecto COPEEMS para producción
+
+La finalidad de este proyecto es la de ejemplificar como se debería de poner un proyecto en producción.
+
+Software utilizado:
+MySQL 5.5.21 (http://www.mysql.com/)
+Lighttpd 1.4.32 (http://www.lighttpd.net/)
+Memcached 1.4.13 (http://memcached.org/)
+Play Framework 1.2.5 (http://www.playframework.org/)
+OpenSSL
+
+Instrucciones:
+
+1) Crear Módulo secure-model
+	Este módulo tendrá la lógica para encriptar y desencryptar datos sensibles
+		play new-module secure-model
+		mkdir lib
+		ant build
+		play build-module
+		
+2) Crear el modelo de datos y CRUDs
+3) Levantar memcached
+4) Configurar memcached en application.conf
+	hibernate.cache.provider_class=net.sf.ehcache.hibernate.EhCacheProvider
+	hibernate.cache.use_query_cache=true
+	hibernate.cache.use_second_level_cache=true   
+	o
+	hibernate.cache.provider_class=com.googlecode.hibernate.memcached.MemcachedCacheProvider
+	hibernate.cache.use_query_cache=true
+	hibernate.cache.use_second_level_cache=true
+	hibernate.memcached.servers=localhost:11211
+
+5) Crear llave y certificado para HTTPS
+	openssl genrsa 1024 > host.key
+	openssl req -new -x509 -nodes -sha1 -days 365 -key host.key > host.cert
+	en application.conf:
+		certificate.key.file=conf/host.key
+		certificate.file=conf/host.cert
+		agregar puertos
+		opt: agregar configuracion de cookies
+
+6) Crear configuraciones de load balance y static content
+			
