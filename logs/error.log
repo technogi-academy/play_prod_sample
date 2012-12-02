@@ -49,3 +49,16 @@
 2012-12-02 17:00:27: (log.c.166) server started 
 2012-12-02 17:00:27: (server.c.987) WARNING: unknown config-key: url.redirect (ignored) 
 2012-12-02 17:01:05: (log.c.166) server started 
+2012-12-02 17:04:49: (mod_proxy.c.1065) proxy-server disabled: 127.0.0.1 9002 7 
+2012-12-02 17:04:54: (mod_proxy.c.1372) proxy - re-enabled: 127.0.0.1 9002 
+2012-12-02 17:05:04: (mod_proxy.c.1065) proxy-server disabled: 127.0.0.1 9002 7 
+2012-12-02 17:05:09: (mod_proxy.c.1372) proxy - re-enabled: 127.0.0.1 9002 
+2012-12-02 17:05:14: (mod_proxy.c.1065) proxy-server disabled: 127.0.0.1 9002 7 
+2012-12-02 17:05:19: (mod_proxy.c.1372) proxy - re-enabled: 127.0.0.1 9002 
+2012-12-02 17:05:21: (mod_proxy.c.1065) proxy-server disabled: 127.0.0.1 9002 7 
+2012-12-02 17:05:25: (mod_proxy.c.1065) proxy-server disabled: 127.0.0.1 9001 7 
+2012-12-02 17:05:25: (mod_proxy.c.1327) no proxy-handler found for: /crud/paises/5 
+2012-12-02 17:05:26: (mod_proxy.c.1372) proxy - re-enabled: 127.0.0.1 9002 
+2012-12-02 17:05:30: (mod_proxy.c.1372) proxy - re-enabled: 127.0.0.1 9001 
+2012-12-02 17:05:49: (mod_proxy.c.1065) proxy-server disabled: 127.0.0.1 9001 7 
+2012-12-02 17:05:54: (mod_proxy.c.1372) proxy - re-enabled: 127.0.0.1 9001 
